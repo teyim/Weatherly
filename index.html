@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weatherly</title>
+	<link rel="shortcut icon" href="./images/icons8_location.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/bd6c486b09.js"></script>
+</head>
+<body>
+    <div class="loadingmodal hide" id="loadingmodal">
+        <div class="loader">Loading...</div>
+        <h1 style="color: bisque;">Getting your current Location.please turn on location on your device</h1>
+      </div>
+      <div class="search-box hide loadingmodal" id="search-box">
+		  <button id="cancelmodalbtn">
+			<i class="fa fa-times" aria-hidden="true" ></i>
+		  </button>
+        <input type="text" name="" id="textbox" placeholder="Enter Location/zip code" >
+        <button type="submit" id="searchBtn">Search</button>
+      </div>
+	<!-- Status Bar -->
+	<div id="status" class="hide">
+		<p></p>
+		<button class="close"><i class="fa fa-times" aria-hidden="true"></i></button>
+	</div>
+	<!-- Current Weather -->
+	<div id="current" class="wrapper">
+		<nav>
+			<button id="locateBtn">
+				<i class="fa fa-search" aria-hidden="true" ></i>
+			</button>
+			
+		</nav>
+		<h1 class="location">Chicago, IL</h1>
+		<h2 class="date">Sunday, January 1, 2017</h2>
+		<div class="weatherIcon">
+			<div class="sunny">
+				<div class="inner"><img src="partly_cloudy_day.svg" alt="image" ></div>
+			</div>
+		</div>
+		<p class="temp">72</p>
+		<p class="conditions">Sunny</p>
+		<p class="otherweatherInfo .customfont" style="margin-top: 10px; "><span class="wind">64</span> | <span class="pressure">48</span> | <span class="humidity">48</span></p>
+	</div>
+	<!-- Future Forecast -->
+	<div id="future" class="wrapper">
+	
+</div>
+</body>
+<script src="weatherly.js"></script>
+</html>

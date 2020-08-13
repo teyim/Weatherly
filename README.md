@@ -1,2 +1,3 @@
 # Weatherly
-simple weather app created with Vanilla js and open the open weather api.
+Simple weather app with html,css and vanilla js
+https://teyim.github.io/weatherApp/
