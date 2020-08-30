@@ -81,7 +81,7 @@ function trackUser() {
        const celsius=(tempINFaraheit-variable);
       const  roundCelsius= Math.round(celsius);
         currentWeatherLocation.innerHTML=`${userweather.name},${userweather.sys.country}`;
-            currentTemperature.innerHTML=`${userweather.main.temp}F | ${roundCelsius}°c`;
+            currentTemperature.innerHTML=`${userweather.main.temp}K | ${roundCelsius}°c`;
             currentWeatherConditions.innerHTML=`${userweather.weather[0].description}`;
             currentDate.innerHTML=`${date}`; 
             wind.innerHTML=`Wind Speed : ${userweather.wind.speed} Mph`;
